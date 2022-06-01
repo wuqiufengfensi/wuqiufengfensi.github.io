@@ -19,6 +19,7 @@ body {
 	margin-bottom: 10px;
 	background-color: #CCC;
 	color: #FFF;
+	text-align: center;
 }
 </style>
 <title>梵梵の窝-CYchano蒼野チャノー博客</title>
@@ -28,16 +29,52 @@ body {
 
 <h1><img src="狐面头像.jpg" width="64" height="64"><strong>你好！</strong>这里是<em>蒼野チャノー</em>.的个人网站！</h1>
 <p>此网站正在开发中，目前计划用于博客等的记录！</p>
-<p>我现在是北京时间：
-  <!-- #BeginDate format:fCh2m -->2022年6月1日 星期三   11:02<!-- #EndDate -->
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<script>
+		window.onload = function(){
+			var span = document.getElementsByTagName('span')[0];
+			var dateStr = formatDate();
+			// 将时间放置到span内
+			span.innerText = dateStr;
+			// 每隔一秒，再放置一次最新的时间
+			setInterval(function(){
+				span.innerText = formatDate();
+			},1000);
+			//格式化年月日时分秒 
+			function formatDate(){
+				var date = new Date();
+				var year = date.getFullYear();
+				var month = date.getMonth()+1;
+				month = month<10?'0'+month:month;
+				var day = date.getDate();
+				day = day<10?'0'+day:day;
+				var hours = date.getHours();
+				hours = hours<10?'0'+hours:hours;
+				var minutes = date.getMinutes();
+				minutes = minutes<10?'0'+minutes:minutes;
+				var seconds = date.getSeconds();
+				seconds = seconds<10?'0'+seconds:seconds;
+				// 2019-07-23 09:40:30
+				return year+'-'+month+'-'+day+' '+hours+':'+minutes+':'+seconds;
+			}
+
+		}
+	</script>
+<body>
+	<div>
+		现在是北京时间：
+		<span></span>
+	</div>
+</body>
+</html>
+
 <p>你可以通过下面的方法关注我！</p>
 <p><img src="tweetlogo.png" width="15" height="15"> <a href="https://www.twitter.com/CYchano">Twitter</a>  	<img src="bilibili.png" width="18" height="17"> <a href="https://space.bilibili.com/229138942">BiliBili</a></p>
 <p>Hello! This is CYchano(Wuqiufengfensi)'s personal website!</p>
 <p>This website is under development. It is currently planned to be used for blog and other records!</p>
-<p>I am now in Beijing time:
-  <!-- #BeginDate format:wfcAm3m -->Wednesday, 06/01/2022  11:02<!-- #EndDate -->
-</p>
-<p>You can pay attention to me through the methods above!</p>
+<p>You can follow me through the methods above!</p>
 </body>
 </html>
