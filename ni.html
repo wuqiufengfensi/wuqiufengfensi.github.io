@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>jQuery在线答题系统</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<style type="text/css">
+			.demo {
+				width: 760px;
+				margin: 60px auto 10px auto
+			}
+		</style>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/quiz.js"></script>
+		<script type="text/javascript">
+			var init = {
+				'questions': [{
+					'question': '你希望的第一串字符是？',
+					'answers': ['jZYMXgFwdpkMi', 'U2FsdGVkX1+rm', 'Cdn4+YiNWtcP0', 'zKz4UnDd6PbbJy50=' ],
+					'correctAnswer': 2
+				}, {
+					'question': '你希望的第二串字符是？',
+					'answers': ['U2FsdGVkX1+rm', 'wdpjZYMXgFkMi=', 'zKz4UnDd6tcP0', 'Cdn4+YiNWPbbJy50' ],
+					'correctAnswer': 1
+				}, {
+					'question': '你希望的第三串字符是？',
+					'answers': ['U2FsdGVkX1+rm', 'XgFwdpkMijZYM0', 'zKz4UnDdYM0', 'jZYMXgFwdpkMi' ],
+					'correctAnswer': 4
+				}, {
+					'question': '你希望的第四串字符是？',
+					'answers': ['U2FsdGVkX1+rm=', 'XgFwdpkMijZYM0', 'zKz4UnDd6PbbJy50=', 'Cdn4+YiNWtcP0' ],
+					'correctAnswer': 3
+				}]
+			};
+
+			$(function() {
+				$('#quiz-container').jquizzy({
+					questions: init.questions
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div class="demo">
+			<div id='quiz-container'></div>
+		</div>
+
+<a href='https://www.sojson.com/encrypt_rabbit.html' target='_blank'>提示，以https://www.sojson.com/为准</a>
+<p><a href='tip2.html' target='_blank'><img height='236' style='border:0px;height:236px;' src='https://img.51miz.com/Element/00/40/10/23/6e8d4b5a_E401023_19d0c352.png' border='0' alt='这也是提示的一部分' /></a></p>
+100分只是你正确的指标。
+	</body>
+</html>
+

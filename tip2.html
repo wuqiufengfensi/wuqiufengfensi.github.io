@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tip/提示</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+<div style="width:1024px;height:1024px;">
+<h1>Hi!I am a ________.(This is the key(also called password.))</h1>
+</div>
+<p>我这么可爱，不戳戳戳吗？</p>
+</body>
+ 
+<script type="text/javascript">
+/*鼠标点击出现文字*/
+$(document).ready(function(){
+    var a_index = 0;
+    $("body").click(function(e){
+        var a = new Array("Call", "me", "in", "my", "English", "name");
+        var $i = $("<span/>").text(a[a_index]);
+        a_index = (a_index + 1) % a.length;
+        var x = e.pageX,y = e.pageY;
+        $i.css({
+            "z-index": 99999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#ff6651"
+        });
+        $("body").append($i);
+        $i.animate({"top": y-180,"opacity": 0},1500,function() {
+            $i.remove();
+        });
+    });
+});
+</script>
