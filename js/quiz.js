@@ -25,7 +25,7 @@
 		var superContainer = $(this),
 			answers = [],
 			introFob =
-			'	<div class="intro-container slide-container"><a class="nav-start" href="#">请认真完成测试题。准备好了吗？<br/><br/><span><img src="' +
+			'	<div class="intro-container slide-container"><a class="nav-start" href="#">谜底串联成真相。准备好了吗？<br/><br/><span><img src="' +
 			config.startImg + '"></span></a></div>	',
 			exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText +
 			'</div><div class="result-keeper"></div></div><div class="notice">请选择一个选项！</div><div class="progress-keeper" ><div class="progress"></div></div>',
@@ -195,7 +195,7 @@
 			}
 			score = roundReloaded(trueCount / questionLength * 100, 2);
 
-			resultSet = '<h2 class="qTitle">' + judgeSkills(score) + '<br/> 您的分数： ' + score + '</h2>' + shareButton +
+			resultSet = '<h2 class="qTitle">' + judgeSkills(score) + '<br/> 您的指标分： ' + score + '</h2>' + shareButton +
 				'<div class="jquizzy-clear"></div>' + resultSet + '<div class="jquizzy-clear"></div>';
 			superContainer.find('.result-keeper').html(resultSet).show(500);
 			superContainer.find('.resultsview-qhover').hide();
