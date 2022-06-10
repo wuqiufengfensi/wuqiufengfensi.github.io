@@ -1,0 +1,254 @@
+﻿
+<!doctype html>
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<style type="text/css">
+body p {
+	text-align: center;
+}
+body h1 {
+	text-align: center;
+}
+body {
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%; 
+	margin-left: 10px;
+	margin-top: 50px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #CCC;
+	color: #FFF;
+	text-align: center;
+}
+</style>
+<title>梵梵の窝-CYchano蒼野チャノー首页</title>
+
+</head>
+
+
+<body>
+
+<h1><strong>你好！</strong></h1>
+<h1>这里是<em>蒼野チャノー</em>.的首页！</h1>
+<p>此网站正在开发中ꦿ！</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<script>
+		window.onload = function(){
+			var span = document.getElementsByTagName('span')[0];
+			var dateStr = formatDate();
+			// 将时间放置到span内
+			span.innerText = dateStr;
+			// 每隔一秒，再放置一次最新的时间
+			setInterval(function(){
+				span.innerText = formatDate();
+			},1000);
+			//格式化年月日时分秒 
+			function formatDate(){
+				var date = new Date();
+				var year = date.getFullYear();
+				var month = date.getMonth()+1;
+				month = month<10?'0'+month:month;
+				var day = date.getDate();
+				day = day<10?'0'+day:day;
+				var hours = date.getHours();
+				hours = hours<10?'0'+hours:hours;
+				var minutes = date.getMinutes();
+				minutes = minutes<10?'0'+minutes:minutes;
+				var seconds = date.getSeconds();
+				seconds = seconds<10?'0'+seconds:seconds;
+				// 2019-07-23 09:40:30
+				return year+'-'+month+'-'+day+' '+hours+':'+minutes+':'+seconds;
+			}
+
+		}
+	</script>
+<body>
+	<div>
+		现在是北京时间：
+		<span></span>
+	</div>
+</body>
+</html>
+
+
+<p>你可以通过下面的方法关注我！</p>
+<img src="狐面头像.jpg" width="128" height="128">
+<p><img src="tweetlogo.png" width="24" height="24"> <a href="https://www.twitter.com/CYchano" style="color: white;">Twitter</a>  	<img src="bilibili.png" width="24" height="24"> <a href="https://space.bilibili.com/229138942" style="color: white;" style="color: white;">BiliBili</a> <img height='24' style='border:0px;height:24px;' src='https://s.pximg.net/common/images/fanbox/favicon.ico' border='0' alt='Support me at fanbox.cc' /> <a href="https://cychano.fanbox.cc/" style="color: white;">FANBOX</a> <img src="https://pic1.afdiancdn.com/static/img/favicon/favicon-red.ico" width="24" height="24" style="color: white;"> <a href="https://afdian.net/@CYchano" style="color: white;">爱发电</a> </p>
+<p>Hello! This is CYchano(Wuqiufengfensi)'s personal website!</p>
+<p>This website is under development. It is currently planned to be used for blog and other records!</p>
+<p>You can follow me through the methods above!</p>
+<a href='https://ko-fi.com/V7V7D2895' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='ni.html' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://img.51miz.com/Element/00/79/46/35/09849534_E794635_3f6a2255.png' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('cychano', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#ff5f5f',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+  
+</script>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言板</title>
+	
+<style type="text/css">
+	.add{
+		margin:0px auto;
+		overflow: hidden;
+		width: 300px;
+	}
+	.add textarea{
+		width: 99%;
+		height: 100px;
+	}
+	.add .user{
+		float: left;
+	}
+	.add .btn{
+		float: left;
+	}
+	.msg{
+		width: 500px;
+		margin: 20px auto;
+		overflow: hidden;
+	}
+	.item{
+		border:solid 1px #CCC;
+		margin: 10px 0;
+	}
+	.item.user{
+		float: left;
+	}
+	.item .time{
+		float: right;
+	}
+</style>
+</head>
+<body>
+
+
+	<div class="add">
+	  <textarea>你并不能在这里发表，而且这只是一个装饰XD
+You can't publish something here, and this's just a decorative XD</textarea>
+		<input type="text" class="user" value="Username" maxlength="20">
+		<input class="btn" type="button" value="发表/Send">
+	</div>
+	<div class="msg">
+		<div class="item">
+			<span class="user">欢迎！|Welcome to this page：</span>
+			<span class="time">2022.6.3</span>
+			<p>今天，我建立了这个网页</p>
+            <p>Today I created this page</p>
+		</div>	
+		<div class="item">
+			<span class="user">About me：</span>
+			<span class="time">2022.6.3</span>
+			<p>鉄道マニア|絵画|DDですｗ|ギャルゲーム</p>
+			<p>日本語を勉強しています｜英語｜中国語</p> 
+			<p>よろしくお願いします！！！😊</p>
+			<p>#ハチロク  #まいてつ #レヱル・ロマネスク</p>
+			<p>My <a href="https://space.bilibili.com/229138942" style="color: white;" style="color: white;">👉BiliBili👈 Channel</a></p>
+			<p>NO POLITICS|拒谈政治|拒談政治|政治の話を拒否する</p>
+		</div>	
+	</div>
+</body>
+</html>
+
+
+
+<script>
+  kofiWidgetOverlay.draw('cychano', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': '请我一杯咖啡',
+    'floating-chat.donateButton.background-color': '#ff5f5f',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+
+</head>
+
+
+
+<body>
+    <br />
+ 
+    <div class="row footer"><p>©蒼野チャノー | CYchano | wuqiufengfensi <a href='https://github.com/wuqiufengfensi' target='_blank'><img height='24' style='border:0px;height:24px;' src='https://github.githubassets.com/favicons/favicon-dark.png' border='0' alt='github.com' /></a></p></div>
+</body>
+<body>
+<div id="imgDiv" style="position:absolute;right:50px;top:60px;">
+    <iframe frameborder="0" border="1" 
+            marginwidth="0" marginheight="0" 
+            width=333 height=77 
+            src="https://music.163.com/outchain/player?type=2&id=32574252&auto=1&height=66">
+    </iframe>
+</div>
+<body>
+<div id="imgDiv" style="position:fixed;left:50px;top:60px;">
+    <div id="a" style="width:20px;height:20px;position:fixed;left:310px;background:black;text-align: center;">X</div>
+    <!-- <img src="01.jpg" border="0" /> -->
+    <div style="width:180px;height:180px;";> <img src="pay.png" width="260" height="260"> ↑微信扫一扫，赞助我！</div>
+</div>
+
+<script>
+var xin = true,
+    yin = true;
+var step = 1;
+var delay = 10;
+var $obj;
+$(function() {
+    $obj = $("#imgDiv");
+    var time = window.setInterval("move()", delay);
+    $obj.mouseover(function() {
+        clearInterval(time)
+    });
+    $obj.mouseout(function() {
+        time = window.setInterval("move()", delay)
+    });
+});
+
+    //关闭
+$(function() {
+    $("#a").click(function() {
+        var b = $("#a").parent();
+        $(b).remove();
+    })
+})
+</script>
+<div id="left_layer" style="position:fixed; top:50px; right:10px;">
+
+
+
+
+
+</html>
+</body>
+<script>
+        document.onreadystatechange=function(){
+            console.log(document.readyState);
+            if(document.readyState=="complete"){
+                $(".loading").fadeOut();
+            }
+        }        
+     </script>
+	 
+
+</html>
